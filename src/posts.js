@@ -3,9 +3,9 @@ export const posts = [
     id: 1,
     title: 'Karch Kiraly',
     image:
-      'https://usavolleyball.org/wp-content/uploads/2020/12/Karch-Kiraly-2022.jpg',
+      'https://www.ravennatoday.it/~media/horizontal-hi/10324922766210/karch-kiraly-2.jpg',
     content:
-      'All alba del terzo millennio, la federazione internazionale di pallavolo (FIVB) lo elegge,con litaliano Lorenzo Bernardi, Miglior giocatore di pallavolo del XX secolo.Vincitore di un Mondiale (1986) e, alle Olimpiadi, di due ori indoor (1984 e 1988) e uno nel beach volley (1996), Charles Frederick Kiraly, nato a Jackson (nello Stato del Michigan), è un ex pallavolista statunitense, dal settembre 2012 allenatore della Nazionale femminile a stelle e strisce.',
+      'All alba del terzo millennio, la federazione internazionale di pallavolo (FIVB) lo elegge,con litaliano Lorenzo Bernardi, Miglior giocatore di pallavolo del XX secolo.Vincitore di un Mondiale (1986) e, alle Olimpiadi, di due ori indoor (1984 e 1988) e uno nel beach volley (1996).',
     tags: ['html', 'css'],
     published: true,
   },
@@ -23,7 +23,7 @@ export const posts = [
     id: 3,
     title: 'Wilfredo Leon',
     image:
-      'https://www.volleynews.it/wp-content/uploads/2023/09/Wilfredo-Leon-Polonia-servizio.jpg',
+      'https://dal15al25.gazzetta.it/files/2021/05/lhcmfsklkdvxxanxwz0p.jpg',
     content:
       'Un giocatore che quando faceva i punti era diverso. Aveva una classe… era uno spettacolo. Si chiamava Wilfredo Leon Venero. Questo giocatore merita una città come Perugia (…) Io penso che se c’è un cristo, Leon verrà a Perugia. Wilfredo Leon idolo, l’attrazione della pallavolo non perugina, neanche italiana, ma europea». È il 12 maggio 2018, la Sir Safety Perugia ha appena perso la semifinale di Champions League contro lo Zenit Kazan, che il giorno successivo sconfiggerà anche Civitanova in finale, alzando la quarta Champions League degli ultimi 4 anni.',
     tags: ['js', 'php'],

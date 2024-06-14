@@ -1,35 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from 'react';
+import { Carousel, Container } from 'react-bootstrap';
+import { posts } from './posts';
+import './App.css';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+
+  const filteredPosts = posts.filter((post) => post.published);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <Container className="mt-5">
+      <h1 className="carousel-title">
+        I pallavolisti che hanno fatto la storia di questo sport
+      </h1>
+      <Carousel activeIndex={index} onSelect={handleSelect}>
+        {filteredPosts.map((post) => (
+          <Carousel.Item key={post.id}>
+            <div className="d-flex justify-content-center align-items-center carousel-item">
+              <img className="d-block" src={post.image} alt={post.title} />
+            </div>
+            <Carousel.Caption>
+              <h3>{post.title}</h3>
+              <p>{post.content}</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </Container>
+  );
+};
 
-export default App
+export default App;
